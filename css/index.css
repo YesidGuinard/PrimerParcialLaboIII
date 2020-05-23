@@ -1,0 +1,207 @@
+body {
+    background-color: whitesmoke;
+}
+
+.principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: rgb(128, 134, 139);
+    color: white;
+}
+
+/*tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+*/
+tr:hover {
+    background-color:rgb(212, 170, 135);
+    border-color: rgb(212, 170, 135);
+}
+
+.desaprobado{
+    background-color: red !important;
+}
+
+.desaprobado:hover{
+    background-color:rgb(212, 135, 135);
+}
+
+
+
+.divNuevoPost {
+    width: 400px;
+    height: 350px;
+    position: fixed;
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    color: rgb(62, 67, 71);
+}
+
+.divNuevoPostVisible {
+    visibility: visible;
+}
+
+.divNuevoPostInvisible {
+    visibility: hidden;
+}
+
+.nuevoPostTitle {
+    margin: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lblNewPost {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.txtNewPost {
+    width: 370px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.txtNewPostName {
+    width: 370px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border-color: gray;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+.txtNewPostNameError {
+    width: 370px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border-color: firebrick;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+
+.txtNewPostFecha {
+    width: 370px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border-color: gray;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.txtNewPostFechaError{
+    width: 370px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border-color: firebrick;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.txtContenido {
+    height: 50px;
+}
+
+.separadorNewPost {
+    height: 1px;
+    width: 95%;
+    margin-left: 10px;
+    border: 0;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.btnPostear {
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: darkgreen;
+    color: rgb(62, 67, 71);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    float: right;
+    margin-right: 15px;
+
+}
+
+.btnEliminar {
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: firebrick;
+    color: rgb(62, 67, 71);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    float: right;
+    margin-right: 15px;
+
+}
+
+.btnCerrar {
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color:gray;
+    color: rgb(62, 67, 71);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    float: right;
+    margin-right: 15px;
+
+}
+
+.btnPostear:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+

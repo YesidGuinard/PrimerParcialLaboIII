@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./js/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <title>Parcial 01 Lab3</title>
+</head>
+<body>
+<div class="principal">
+<h2>Listado de Materias</h2>
+    <table id="tabla">
+        <caption></caption>
+        <thead>
+        <tr>
+            <th hidden>id</th>
+            <th>Nombre</th>
+            <th>Cuatrimestre</th>
+            <th>Fecha Final</th>
+            <th>Turno</th>
+
+        </tr>
+        </thead>
+        <tbody id="tablaResultados">
+
+        </tbody>
+    </table>
+
+    <div class="divNuevoPost divNuevoPostInvisible" id="divNuevoPost">
+        <h2 class="nuevoPostTitle">Modificar Materia</h2>
+        <hr class="separadorNewPost">
+
+        <input type="hidden" name="index" id="indexMateria">
+
+        <label for="txtNombre" class="lblNewPost">Nombre</label>
+        <br/>
+        <input type="text" name="txtNombre" id="txtNombre" class="txtNewPostName">
+        <br/>
+
+        <label for="selCuatrimestre" class="lblNewPost">Cuatrimestre</label>
+        <br/>
+        <select id= "selCuatrimestre" class="txtNewPost" disabled>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br/>
+
+        <label for="dateFechafinal" class="lblNewPost">Fecha Final</label>
+        <br/>
+        <input type="date" id="dateFechafinal" class="txtNewPost" ><br />
+        <br/>
+
+        <label class="lblNewPost" >Turno</label>
+        <br/>
+        <input type="radio" id="turnom" name="rdoTipo" value="Mañana"  checked />Mañana<br>
+        <input type="radio" id="turnon" name="rdoTipo" value="Noche"  />Noche<br>
+
+        <hr class="separadorNewPost">
+
+        <input type="button" id= "btnCerrar" class="btnCerrar" value="Cerrar" onclick="Cerrar()">
+        <input type="button" id ="btnEliminar" class="btnEliminar" value="Eliminar" onclick="eliminar()">
+        <input type="button" id ="btnModificar" class="btnPostear" value="Modificar" onclick="modificar()">
+
+    </div>
+
+    <div class="divLoadingInvisible" id="divLoading">
+        <div class="loader"></div>
+    </div>
+
+</div>
+</body>
+</html>
